@@ -1,3 +1,34 @@
 =========================== AULA 1 ===========================
-- Programar = instruções em ling. de prog. -> computador -> resolver nosso problema
-- Algoritmo: conjunto de regras para solução de um problema
+- Programar = instruções em ling. de prog. -> computador -> resolver nosso problema;
+- Algoritmo: conjunto de regras para solução de um problema.
+
+=========================== AULA 2 ===========================
+- Hardware = parte física,
+- Centrais x Periféricos.
+
+=========================== AULA 3 ===========================
+- Software = parte lógica, dá vida ao Hardware;
+- Categorias: S.O., drivers, linguagens de programação, aplicativos e/ou utilitários.
+
+=========================== AULA 4 ===========================
+- Estrutura do PC: CPU, RAM, HD, SSD
+
+=========================== AULA 5 ===========================
+- Internet / ARPANET / - surgiu com cunho militar - descentralização da informação
+- Linhas independentes
+- Protocolos: TCP/IP, HTTP
+- Endeerço IP / MAC Address
+- DNS - Nome dos domínios
+
+=========================== AULA 6 ===========================
+- Kernel - núcleo - coração do S.O.
+- Gerenciador de processos
+- Escalonador - chaveamento de processos ativos, gerencia as etapas do processo - otimização das tarefas
+- Interface
+
+=========================== AULA 7 ===========================
+- Tipos de sistemas: desktop, server, mobile, dedicados
+
+=========================== AULA 8 ===========================
+- Principais funções do S.O.: gerenciamento de processos/programas, ger de arquivos e ger de memória 
+
