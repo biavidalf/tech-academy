@@ -1,0 +1,310 @@
+/* 
+============ OVERALL SETTINGS ============
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{scroll-behavior: smooth;}
+body{
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+/* 
+============ PRESENTATION ============
+*/
+/* Typewritter animation */
+.typed-out{
+    overflow: hidden;
+    /* border-right: .15em solid #FF4C29; */
+    white-space: nowrap;
+    animation: 
+        typing 0.8s steps(20, end) forwards;
+    width: 0;
+}
+.delay1{
+    animation-delay: 0.6s;
+}
+.delay2{
+    animation-delay: 1.4s;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #162f64, #334594, #585bc4, #856ff5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 100px;
+}
+
+#presentation-text{
+    width: 30%;   
+}
+#presentation-text div:first-child{
+    font-size: 2em;
+    font-weight: 300;
+}
+#presentation-text .bigger{
+    font-size: 2.5em;
+    font-weight: 400;
+}
+#presentation-text button{
+    padding: 14px 35px;
+    margin-top: 20px;
+    border: none;
+    border: 3px solid #FF4C29;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #FF4C29;
+    font-size: 1.6em;
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    cursor: pointer;
+}
+
+#presentation-text button:hover{
+    background-color: #FF4C29;
+    color: white;
+}
+@keyframes show {
+    from{
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+      }
+        
+}
+.show-delay{
+    animation-name: show;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 2.3s;
+    animation-timing-function: linear;
+}
+
+#presentation-image{
+    width: 50%;   
+    display: flex;
+    justify-content: flex-end;
+}
+#presentation-image img{
+    width: 80%;
+}
+
+/* 
+============ NAV BAR ============
+*/
+nav{
+    position: sticky;
+    top: 0;
+    padding: 0 70px;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #041225;
+    font-size: 1.2em;
+}
+nav div > a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+nav div > a:hover{
+    border-bottom: 2px solid #856FF5;
+}
+nav #links a{
+    margin-right: 40px;
+}
+
+/* 
+============ MY WORK ============
+*/
+#my-work{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #041225;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+span.title{
+    font-size: 2em;
+    display: inline-block;
+    text-align: center;
+}
+#my-work .title{
+    padding-top: 40px;
+}
+
+#works{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+}
+.work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 340px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#works .work .description{
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #ff4c29, #ff4c29, #ff4c29, #ff4c29, #ff4c29, #ff5426, #ff5b22, #ff621f, #ff7117, #ff800f, #ff8e05, #ff9b00);
+    color: white;
+    border-radius: 8px;
+    padding: 40px 27px 40px 35px;
+}
+.description .title-work{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.description .description-work, .description .tecnologies > div{
+    font-size: 1.1em;
+}
+.description .tecnologies > span{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.description .github button{
+    padding: 14px 40px;
+    background-color: white;
+    color: #FF4C29;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    cursor: pointer;
+}
+.description .github button:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+#works .work .printscreen{
+    width: 68%;
+}
+#works .work .printscreen img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 
+============ ABOUT ME ============
+*/
+section{
+    background-color: #0c1a2e;
+}
+#about-me{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 62vh;
+    width: 80%;
+    padding-top: 90px;
+}
+#about-me .photo{
+    width: 14%;
+}
+#about-me #description-me{
+    width: 50%;
+}
+#description-me .title{
+    font-size: 2.2em;
+    font-weight: 600;
+}
+#description-me .description{
+    font-size: 1.2em;
+    padding-right: 30px;
+}
+#about-me #tecnologies{
+    width: 17%;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    flex: display;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 27px 40px 27px;
+}
+#tecnologies .title{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #585bc4;
+    text-align: center;
+    margin-bottom: 7px;
+}
+#tecnologies .description{
+    font-size: 1.1em;
+    color: black;
+    text-align: left;
+}
+
+#about-me .photo img{
+    border-radius: 50%;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: 10% 20%;
+}
+.about > .title{
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    background-color: #0c1a2e;
+}
+
+/* 
+============ FOOTER ============
+*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    background-color: #041225;
+}
+footer > a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #585bc4;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+footer > div:first-child{
+   font-weight: 600;
+   color: #8d8fdb; 
+   border-bottom: none;
+   font-size: 1.3em;
+}
+footer > a:hover{
+   color: #8d8fdb;  
+}
